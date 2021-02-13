@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Provider} from "react-redux";//importer pour comprendre qu il s agit de redux//
+import store from "./Js/Store/store";
+
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store ={store}> 
+    {/* // pour que chaque component a l accee au store. */}
     <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
