@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { ListGroup, Button } from "react-bootstrap";
 import { deleteTask, doneTask } from "../Js/Action/ActionTask";
 import EditItem from "./EditItem";
-
+import '.././App.css';
 
 const ListItems = () => {
     const list = useSelector((state) => state.reducerTask.list);
@@ -12,7 +12,7 @@ const ListItems = () => {
   
     return (
       <ListGroup>
-        {(show ? list.filter((el)=> el.isDone === true ):list).map((item,i)=> (
+        {(show? list.filter((el)=> el.isDone === true ):list).map((item,i)=> (
           <ListGroup.Item
             key={i}
             style={{ display: "flex", alignItems: "flex-end" }}
@@ -42,6 +42,7 @@ const ListItems = () => {
             </div>
   
             <p style={{ margin: "0px", }} className={item.isDone?"decoration":""}>{item.text}</p>
+          
           </ListGroup.Item>
         ))}
       </ListGroup>

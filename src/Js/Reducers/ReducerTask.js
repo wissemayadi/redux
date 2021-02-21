@@ -1,4 +1,4 @@
-import { ADD_TASK ,DELETE_TASK,EDIT_TASK,DONE_TASK,TOOGLE} from "../constants/ActionTypes"
+import { ADD_TASK ,DELETE_TASK,EDIT_TASK,DONE_TASK,TOGGLE} from "../constants/ActionTypes"
 
 const initialState={
 
@@ -25,6 +25,9 @@ case DONE_TASK :
     )
     
     }
+
+    case TOGGLE: 
+    return {...state,show:!state.show}
 default :
 return  state;
 }

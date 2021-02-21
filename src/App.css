@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
-.decoration {
-  text-decoration:line-through;
+
+.decoration{
+  text-decoration: line-through;
 }

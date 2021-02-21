@@ -14,7 +14,7 @@ export const deleteTask =(payload)=>{
        payload,
     }
 }
-export const doneTask =(payload)=>{
+export const doneTask =(payload)=>{// complete task
 
     return {
         type: DONE_TASK,

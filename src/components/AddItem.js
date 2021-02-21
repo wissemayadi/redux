@@ -1,10 +1,10 @@
 import React ,{useState} from 'react';
 import {Card,Form,FormControl,InputGroup,Button} from 'react-bootstrap';
-// import "../index.css";
+
 import { useDispatch } from "react-redux";
 import {addTask,toggle} from '../Js/Action/ActionTask';
 const AddItem = () => {
-const [myInput,setMyInput] = useState("")
+const [myInput,setMyInput] = useState("");
 const dispatch = useDispatch();
 
 
@@ -45,7 +45,7 @@ setMyInput("");
           <Button variant="info" className="mr-3"
           onClick={()=>dispatch(toggle())} >
             
-            isDone</Button>
+            hide</Button>
         </Card.Body>
       </Card>
     )

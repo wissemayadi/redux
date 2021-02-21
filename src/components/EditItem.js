@@ -26,7 +26,9 @@ function EditItem({item}) {
           <Modal.Header closeButton>
             <Modal.Title>edit</Modal.Title>
           </Modal.Header>
-          <Modal.Body><input type="text"
+          <Modal.Body>
+            {" "}
+            <input type="text"
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
             value={editInput}
